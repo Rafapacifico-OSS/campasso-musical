@@ -122,6 +122,22 @@
         .nomeInstrumento {
             color: #333333;
         }
+
+        .rodape{
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 3rem 5%; 
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .rodape h2,
+        .rodape h3 {
+            color: #ffffff;
+        }
+
     </style>
 </head>
 
@@ -146,7 +162,7 @@
                     <a href="#depoimentos" class="class=" linkNav">Depoimentos</a>
                 </li>
                 <li>
-                    <a href="#contato" class="class=" linkNav">Contato</a>
+                    <a href="#contato" class="class=" linkNav>Contato</a>
                 </li>
             </ul>
         </nav>
@@ -187,20 +203,14 @@
         <section id="instrumentos" class="container" style="background-color: #eeeeee;">
             <h2 class="tituloSecao">Catalogo de instrumentos</h2>
             <div class="gradeInstrumentos">
+
                 <article class="cartaoInstrumento">
                     <h3 class="nomeInstrumento">Guitarra Elétrica StratoCaster</h3>
-
                     <img src="https://images.unsplash.com/photo-1516924962500-2b4b3b99ea02" alt="imagem da guitarra"
                         width="300" style="border-radius: 4px;margin-bottom: 1rem;">
-                    <p>
-                        <strong>Marcas: </strong>pearl
-                    </p>
-                    <p>
-                        Guitarra Clássica de Alta Performance, Ideal Para Rock e Blues
-                    </p>
-                    <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;">
-                        <em>Preço:R$ 3.500,00</em>
-                    </p>
+                    <p> <strong>Marcas: </strong>pearl </p>
+                    <p> Guitarra Clássica de Alta Performance, Ideal Para Rock e Blues </p>
+                    <p style="color: #d32f2f; font-weight: bold; font-size: 1.2rem;"><em>Preço:R$ 3.500,00</em> </p>
                     <a href="#" class="botaoPrincipal">adicionar ao carrinho</a>
                 </article>
 
@@ -278,11 +288,11 @@
                     <label for="departamento" style="font-weight: bold;">departamento</label>
 
                     <select name="departamento" id="departamento"
-                        style="width: 100%;padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
-                        <option value="vendas">venda</option>
-                        <option value="suporte">suporte</option>
-                        <option value="financeiro">financeiro</option>
-                        <option value="sugestao">sugestões</option>
+                        style="width: 100%; padding: 0.8rem; margin: 0.5rem 0 0.5rem 0; border: 1px solid #cccccc; border-radius: 4px;">
+                        <option value="vendas">Venda</option>
+                        <option value="suporte">Suporte</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="sugestao">Sugestões</option>
                     </select>
                     <br><br>
                     <label for="mensagem" style="font-weight: bold;">mensagem</label>
@@ -298,78 +308,78 @@
     </main>
 
     <!-- rodapé do site-->
-    <footer>
-        <div>
-            <h2>Compasso musical</h2>
-            <p>
-                Desde 2026 conectando pessoas atraves da musica.
-            </p>
+    <footer id="footer" class="rodape">
+        <div style="flex: 1; min-width: 250px;">
+            <h2 class="titulo">Compasso musical</h2>
+
+            <p>Desde 2026 conectando pessoas atraves da musica.</p>
+
         </div>
 
-        <nav>
-            <h3>Mapa do site</h3>
-            <ul>
+        <nav style="flex: 1; min-width: 150px; ">
+            <h3 style="border-bottom: 2px solid #d32f2f;padding-bottom: 0.5rem; display: inline-block; ">Mapa do site</h3>
+            <ul style="margin-top: 1rem; line-height: 2; ">
                 <li>
-                    <a href="#hero">Inicio</a>
+                    <a href="#hero" class="linkNav">Inicio</a>
                 </li>
                 <li>
-                    <a href="#sobre">Sobre</a>
+                    <a href="#sobre" class="linkNav">Sobre</a>
                 </li>
                 <li>
-                    <a href="#instrumentos">Instrumentos</a>
+                    <a href="#instrumentos" class="linkNav">Instrumentos</a>
                 </li>
                 <li>
-                    <a href="depoimentos">Depoimentos</a>
+                    <a href="#depoimentos" class="linkNav">Depoimentos</a>
                 </li>
                 <li>
-                    <a href="">Contato</a>
-                </li>
-            </ul>
-        </nav>
-
-        <nav>
-            <h3>Insformações</h3>
-            <ul>
-                <li>
-                    <a href="">Termos de Uso</a>
-                </li>
-                <li>
-                    <a href="">Politica de Privacidade</a>
-                </li>
-                <li>
-                    <a href="">Trocas e devoluçoes</a>
+                    <a href="#contato" class="linkNav">Contato</a>
                 </li>
             </ul>
         </nav>
 
-        <div>
-            <h3>Siga-Nos</h3>
-            <div>
+        <nav style="flex: 1; min-width: 150px;">
+            <h3 style="border-bottom: 2px solid #d32f2f;padding-bottom: 0.5rem; display: inline-block; ">Insformações</h3>
+            <ul style="margin-top: 1rem; line-height: 2; ">
+                <li>
+                    <a href="#" class="linkNav">Termos de Uso</a>
+                </li>
+                <li>
+                    <a href="#" class="linkNav">Politica de Privacidade</a>
+                </li>
+                <li>
+                    <a href="#" class="linkNav">Trocas e devoluçoes</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div style="flex: 1; min-width: 250;">
+            <h3 style="border-bottom: 2px solid #d32f2f;padding-bottom: 0.5rem; display: inline-block; ">Siga-Nos</h3>
+            <div style="display: flex; gap: 20px;">
                 <a href="instagram.com">
-                    <img src="instagram.png.png" alt="instagram">
+                    <img src="instagram.png" alt="instagram" width="30"/>
                 </a>
                 <a href="youtube.com">
-                    <img src="Youtube.png.png" alt="Youtube">
+                    <img src="youtube.png" alt="Youtube" width="30"/>
                 </a>
                 <a href="fecebook.com">
-                    <img src="facebook.png.png" alt="Fecebook">
+                    <img src="facebook.png" alt="Fecebook" width="30"/>
                 </a>
 
-            </div>
-            <h3>Newslatter</h3>
-            <p>
-                Receba promoções exclusivas no seu e-mail
-            </p>
-            <form action="">
-                <input type="email" name="email" id="email" placeholder="digite seu e-mail">
-                <button>Assinar</button>
+            <div style="flex: 1; min-width: 250;">
+            <h3 style="border-bottom: 2px solid #d32f2f;padding-bottom: 0.5rem; display: inline-block;">Newslatter</h3>
+            <form action="" style="display: flex; margin-top: 1rem; ">
 
-            </form>
-        </div>
-        <p>
-            Copyright &copy; 2026 compaso musical - todos os direitos reservados. site desenvolvidos por Rafael Pacifico.
-        </p>
+            <input type="email" name="email" id="email" placecholder="digite seu E-mail" style="margin-top: 0; border-radius: 4px
+            0 0 4px; padding: 0.8rem; outline; nome; width: 70%;" /> 
+            <button sype="submit" class="botaoPrincipal" style="margin-top: 0; border-radius: 0 4px 4px 0; border: none; pointer;">Assinar</button>
+        </form>
     </footer>
-</body>
+</div>
 
+<div style="width: 100%; text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #333333;">
+    <p>
+    Copyright &copy; 2026 compaso musical - todos os direitos reservados. site desenvolvidos por Rafael Pacifico.
+    </p>
+</div>
+</body>
 </html>
